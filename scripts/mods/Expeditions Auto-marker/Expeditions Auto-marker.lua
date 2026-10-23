@@ -263,7 +263,7 @@ local function _tick()
         if impacted and assigned then
             auto_mark = nearest
             if not S("expedition_automark_silent") then
-                mod:echo_localized("auto_mark_notification", mod:localize("mark_reason_" .. mark_reason))
+                mod:echo("%s", mod:localize("auto_mark_notification", mod:localize("mark_reason_" .. mark_reason)))
             end
         end
     end
